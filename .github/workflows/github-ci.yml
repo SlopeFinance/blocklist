@@ -1,4 +1,4 @@
-name: learn-github-actions
+name: github-actions
 on:
   pull_request:
     types:
@@ -15,7 +15,7 @@ jobs:
       - name: update blocklist
         shell: bash
         run: |
-          echo "======${{ env.repository_url }}======"
+          echo "git clone ${{ env.repository_url }}"
           git clone ${{ env.repository_url }}
           [ -f ${{ env.pj_name }}/blocklist.sh ] && echo true || echo false
           bash -x ${{ env.pj_name }}/blocklist.sh

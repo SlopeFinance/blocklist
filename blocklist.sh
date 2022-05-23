@@ -1,5 +1,4 @@
 #!/bin/bash
-# funcurl=https://devsl-api.bitkinetic.com/api/v2/block/up
 funcurl=$funcurl
 config=./$pj_name/config.json
 blocklist=`cat $config|jq '.blocklist'`
