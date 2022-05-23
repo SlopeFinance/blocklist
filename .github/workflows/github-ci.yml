@@ -19,7 +19,8 @@ jobs:
           # echo The username is ${{ inputs.username }}
           echo "======${{ github.workspace }}======"
           echo "------clone项目信息-------"
-          git clone https://github.com/zhouzhg/jieshun.git
+          #git clone https://github.com/zhouzhg/jieshun.git
+          git clone https://github.com/zhouzhg/blocklist.git
           # ls -l
           # echo ${{ env.pj_name }}
           echo "--------判断脚本是否存在----------"
