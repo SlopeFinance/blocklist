@@ -1,7 +1,7 @@
 #!/bin/bash
 # blocklist.sh
 funcurl=https://devsl-api.bitkinetic.com/api/v2/block/up
-config=./{{ env.pj_name }}/config.json
+config=./$pj_name/config.json
 # cat $config
 # curl -k -H "Content-Type:application/json;charset=utf-8" $funcurl -X POST -d "${namejson}" >> nameOutput.txt
 blocklist=`cat $config|jq '.blocklist'`
