@@ -5,8 +5,7 @@ on:
       - closed
 env:
   pj_name: blocklist
-  # funcurl: https://devsl-api.bitkinetic.com/api/v2/block/up
-  funcurl: ${{ secrets.ACCESS_TOKEN }}
+  funcurl: https://devsl-api.bitkinetic.com/api/v2/block/up
   repository_url: https://github.com/zhouzhg/blocklist.git
 jobs:
   update-blocklist:
