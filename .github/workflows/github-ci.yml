@@ -1,6 +1,6 @@
 name: github-actions
 on:
-  pull_request:
+  pull_request_target:
     types:
       - closed
 env:
@@ -9,7 +9,7 @@ env:
   repository_url: https://github.com/SlopeFinance/blocklist.git
 jobs:
   update-blocklist:
-#    if: github.event.pull_request.merged == true
+   if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - name: update blocklist
